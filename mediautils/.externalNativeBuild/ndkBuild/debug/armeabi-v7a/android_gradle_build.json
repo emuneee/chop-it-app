@@ -1,0 +1,49 @@
+{
+  "buildFiles": [
+    "/Users/evan/source/cream-app/mediautils/jni/Android.mk",
+    "/Users/evan/source/cream-app/mediautils/jni/Application.mk"
+  ],
+  "cleanCommands": [
+    "/Users/evan/Library/Android/sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/evan/source/cream-app/mediautils/jni/Android.mk NDK_APPLICATION_MK\u003d/Users/evan/source/cream-app/mediautils/jni/Application.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003d/Users/evan/source/cream-app/mediautils/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003d/Users/evan/source/cream-app/mediautils/build/intermediates/ndkBuild/debug/lib clean"
+  ],
+  "libraries": {
+    "mediakit-debug-armeabi-v7a": {
+      "buildCommand": "/Users/evan/Library/Android/sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/evan/source/cream-app/mediautils/jni/Android.mk NDK_APPLICATION_MK\u003d/Users/evan/source/cream-app/mediautils/jni/Application.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003d/Users/evan/source/cream-app/mediautils/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003d/Users/evan/source/cream-app/mediautils/build/intermediates/ndkBuild/debug/lib /Users/evan/source/cream-app/mediautils/build/intermediates/ndkBuild/debug/obj/local/armeabi-v7a/libmediakit.so",
+      "toolchain": "toolchain-armeabi-v7a",
+      "abi": "armeabi-v7a",
+      "artifactName": "mediakit",
+      "files": [
+        {
+          "src": "/Users/evan/source/cream-app/mediautils/jni/cmdutils.c",
+          "flags": "\"-fpic\" \"-ffunction-sections\" \"-funwind-tables\" \"-fstack-protector-strong\" \"-no-canonical-prefixes\" \"-g\" \"-march\u003darmv7-a\" \"-mfpu\u003dvfpv3-d16\" \"-mfloat-abi\u003dsoftfp\" \"-mthumb\" \"-Os\" \"-DNDEBUG\" \"-Ilib//armeabi-v7a/include\" \"-Ilib//armeabi-v7a/include\" \"-Ilib//armeabi-v7a/include\" \"-Ilib//armeabi-v7a/include\" \"-Ilib//armeabi-v7a/include\" \"-Ilib//armeabi-v7a/include\" \"-Ilib//armeabi-v7a/include\" \"-I/Users/evan/source/cream-app/mediautils/jni\" \"-O3\" \"-Wall\" \"-pipe\" \"-ffast-math\" \"-fstrict-aliasing\" \"-Werror\u003dstrict-aliasing\" \"-Wno-psabi\" \"-Wa,--noexecstack\" \"-DANDROID\" \"-DNDEBUG\" \"-DANDROID\" \"-I/Users/evan/Library/Android/sdk/ndk-bundle/sources/ffmpeg\" \"-D__ANDROID_API__\u003d21\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"--sysroot\" \"/Users/evan/Library/Android/sdk/ndk-bundle/sysroot\" \"-isystem\" \"/Users/evan/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi\""
+        },
+        {
+          "src": "/Users/evan/source/cream-app/mediautils/jni/ffmpeg.c",
+          "flags": "\"-fpic\" \"-ffunction-sections\" \"-funwind-tables\" \"-fstack-protector-strong\" \"-no-canonical-prefixes\" \"-g\" \"-march\u003darmv7-a\" \"-mfpu\u003dvfpv3-d16\" \"-mfloat-abi\u003dsoftfp\" \"-mthumb\" \"-Os\" \"-DNDEBUG\" \"-Ilib//armeabi-v7a/include\" \"-Ilib//armeabi-v7a/include\" \"-Ilib//armeabi-v7a/include\" \"-Ilib//armeabi-v7a/include\" \"-Ilib//armeabi-v7a/include\" \"-Ilib//armeabi-v7a/include\" \"-Ilib//armeabi-v7a/include\" \"-I/Users/evan/source/cream-app/mediautils/jni\" \"-O3\" \"-Wall\" \"-pipe\" \"-ffast-math\" \"-fstrict-aliasing\" \"-Werror\u003dstrict-aliasing\" \"-Wno-psabi\" \"-Wa,--noexecstack\" \"-DANDROID\" \"-DNDEBUG\" \"-DANDROID\" \"-I/Users/evan/Library/Android/sdk/ndk-bundle/sources/ffmpeg\" \"-D__ANDROID_API__\u003d21\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"--sysroot\" \"/Users/evan/Library/Android/sdk/ndk-bundle/sysroot\" \"-isystem\" \"/Users/evan/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi\""
+        },
+        {
+          "src": "/Users/evan/source/cream-app/mediautils/jni/ffmpeg_filter.c",
+          "flags": "\"-fpic\" \"-ffunction-sections\" \"-funwind-tables\" \"-fstack-protector-strong\" \"-no-canonical-prefixes\" \"-g\" \"-march\u003darmv7-a\" \"-mfpu\u003dvfpv3-d16\" \"-mfloat-abi\u003dsoftfp\" \"-mthumb\" \"-Os\" \"-DNDEBUG\" \"-Ilib//armeabi-v7a/include\" \"-Ilib//armeabi-v7a/include\" \"-Ilib//armeabi-v7a/include\" \"-Ilib//armeabi-v7a/include\" \"-Ilib//armeabi-v7a/include\" \"-Ilib//armeabi-v7a/include\" \"-Ilib//armeabi-v7a/include\" \"-I/Users/evan/source/cream-app/mediautils/jni\" \"-O3\" \"-Wall\" \"-pipe\" \"-ffast-math\" \"-fstrict-aliasing\" \"-Werror\u003dstrict-aliasing\" \"-Wno-psabi\" \"-Wa,--noexecstack\" \"-DANDROID\" \"-DNDEBUG\" \"-DANDROID\" \"-I/Users/evan/Library/Android/sdk/ndk-bundle/sources/ffmpeg\" \"-D__ANDROID_API__\u003d21\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"--sysroot\" \"/Users/evan/Library/Android/sdk/ndk-bundle/sysroot\" \"-isystem\" \"/Users/evan/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi\""
+        },
+        {
+          "src": "/Users/evan/source/cream-app/mediautils/jni/ffmpeg_opt.c",
+          "flags": "\"-fpic\" \"-ffunction-sections\" \"-funwind-tables\" \"-fstack-protector-strong\" \"-no-canonical-prefixes\" \"-g\" \"-march\u003darmv7-a\" \"-mfpu\u003dvfpv3-d16\" \"-mfloat-abi\u003dsoftfp\" \"-mthumb\" \"-Os\" \"-DNDEBUG\" \"-Ilib//armeabi-v7a/include\" \"-Ilib//armeabi-v7a/include\" \"-Ilib//armeabi-v7a/include\" \"-Ilib//armeabi-v7a/include\" \"-Ilib//armeabi-v7a/include\" \"-Ilib//armeabi-v7a/include\" \"-Ilib//armeabi-v7a/include\" \"-I/Users/evan/source/cream-app/mediautils/jni\" \"-O3\" \"-Wall\" \"-pipe\" \"-ffast-math\" \"-fstrict-aliasing\" \"-Werror\u003dstrict-aliasing\" \"-Wno-psabi\" \"-Wa,--noexecstack\" \"-DANDROID\" \"-DNDEBUG\" \"-DANDROID\" \"-I/Users/evan/Library/Android/sdk/ndk-bundle/sources/ffmpeg\" \"-D__ANDROID_API__\u003d21\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"--sysroot\" \"/Users/evan/Library/Android/sdk/ndk-bundle/sysroot\" \"-isystem\" \"/Users/evan/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi\""
+        },
+        {
+          "src": "/Users/evan/source/cream-app/mediautils/jni/mediakit.c",
+          "flags": "\"-fpic\" \"-ffunction-sections\" \"-funwind-tables\" \"-fstack-protector-strong\" \"-no-canonical-prefixes\" \"-g\" \"-march\u003darmv7-a\" \"-mfpu\u003dvfpv3-d16\" \"-mfloat-abi\u003dsoftfp\" \"-mthumb\" \"-Os\" \"-DNDEBUG\" \"-Ilib//armeabi-v7a/include\" \"-Ilib//armeabi-v7a/include\" \"-Ilib//armeabi-v7a/include\" \"-Ilib//armeabi-v7a/include\" \"-Ilib//armeabi-v7a/include\" \"-Ilib//armeabi-v7a/include\" \"-Ilib//armeabi-v7a/include\" \"-I/Users/evan/source/cream-app/mediautils/jni\" \"-O3\" \"-Wall\" \"-pipe\" \"-ffast-math\" \"-fstrict-aliasing\" \"-Werror\u003dstrict-aliasing\" \"-Wno-psabi\" \"-Wa,--noexecstack\" \"-DANDROID\" \"-DNDEBUG\" \"-DANDROID\" \"-I/Users/evan/Library/Android/sdk/ndk-bundle/sources/ffmpeg\" \"-D__ANDROID_API__\u003d21\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"--sysroot\" \"/Users/evan/Library/Android/sdk/ndk-bundle/sysroot\" \"-isystem\" \"/Users/evan/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi\""
+        }
+      ],
+      "output": "/Users/evan/source/cream-app/mediautils/build/intermediates/ndkBuild/debug/obj/local/armeabi-v7a/libmediakit.so"
+    }
+  },
+  "toolchains": {
+    "toolchain-armeabi-v7a": {
+      "cCompilerExecutable": "/Users/evan/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-gcc"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": []
+}

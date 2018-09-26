@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="toolbar_elevation">4dp</dimen>
+
+    <dimen name="waveform_height">150dp</dimen>
+    <dimen name="slider_height">20dp</dimen>
+    <dimen name="image_card_height">260dp</dimen>
+    <dimen name="image_height">240dp</dimen>
+    <dimen name="button_bar_height">36dp</dimen>
+    <dimen name="action_height">36dp</dimen>
+    <dimen name="button_height">48dp</dimen>
+
+    <dimen name="half_margin">4dp</dimen>
+    <dimen name="base_margin">8dp</dimen>
+    <dimen name="double_margin">16dp</dimen>
+
+</resources>

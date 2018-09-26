@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Chop</string>
+    <string name="add_audio">Add audio</string>
+    <string name="add_image">Add image</string>
+
+    <string name="content_desc_image">selected image</string>
+    <string name="content_desc_remove">remove</string>
+
+    <string name="export_button">Export</string>
+
+    <string name="notification_title_task_in_progress">Building your chop</string>
+    <string name="notification_text_task_copying">Copying audio and image files</string>
+    <string name="notification_text_task_processing">Stitching audio and image files together</string>
+    <string name="notification_title_task_finished">Chop Completed</string>
+    <string name="notification_text_task_finished">Touch to share</string>
+    <string name="notification_action_text_share">Share</string>
+
+    <string name="notification_title_task_failed">Chop Error</string>
+    <string name="notification_text_task_failed">An error occurred while creating your Chop</string>
+
+    <string name="notification_channel_id_task_service">cid_task_service_01</string>
+    <string name="notification_channel_name_task_service">Processing</string>
+    <string name="notification_channel_desc_task_service">Shows when Chop is building a video</string>
+</resources>

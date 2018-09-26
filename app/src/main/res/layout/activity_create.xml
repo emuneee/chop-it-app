@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lighter_gray"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/Toolbar"
+            tools:title="@string/app_name" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/image_height"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+    <ImageView
+        android:id="@+id/imageOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/image_height"
+        android:padding="65dp"
+        android:background="@color/white"
+        android:src="@drawable/ic_image_placeholder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+    <View
+        android:id="@+id/divider1"
+        style="@style/Separator.Horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/image"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/removeImage"
+        style="@style/ButtonBarAction"
+        android:src="@drawable/ic_delete"
+        app:layout_constraintEnd_toEndOf="@+id/divider1"
+        app:layout_constraintTop_toBottomOf="@+id/image" />
+
+    <ImageButton
+        android:id="@+id/crop"
+        style="@style/ButtonBarAction"
+        android:src="@drawable/ic_crop"
+        app:layout_constraintEnd_toStartOf="@+id/removeImage"
+        app:layout_constraintTop_toBottomOf="@+id/divider1" />
+
+    <View
+        android:id="@+id/divider2"
+        style="@style/Separator.Horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/crop"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <co.mainmethod.chop.view.WaveformView
+        android:id="@+id/audio"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/waveform_height"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <ImageView
+        android:id="@+id/audioOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/waveform_height"
+        android:visibility="invisible"
+        android:padding="20dp"
+        android:background="@color/white"
+        android:src="@drawable/ic_audio_placeholder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2"
+        tools:visibility="visible" />
+
+    <View
+        android:id="@+id/divider3"
+        style="@style/Separator.Horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/audio"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        style="@style/AudioTime"
+        android:id="@+id/startTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="start"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/divider3"
+        tools:text="0:00" />
+
+    <TextView
+        style="@style/AudioTime"
+        android:id="@+id/endTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/divider3"
+        tools:text="1:13:42" />
+
+    <Button
+        android:id="@+id/fastRewind"
+        style="@style/PlayerButtonAction"
+        android:layout_centerVertical="true"
+        android:drawableTop="@drawable/ic_fast_rewind"
+        android:text="5s"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+    <Button
+        android:id="@+id/play"
+        style="@style/PlayerButtonAction"
+        android:drawableTop="@drawable/ic_play"
+        android:text="-"
+        app:layout_constraintStart_toEndOf="@+id/fastRewind"
+        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+    <Button
+        android:id="@+id/fastForward"
+        style="@style/PlayerButtonAction"
+        android:drawableTop="@drawable/ic_fast_forward"
+        android:text="5s"
+        android:src="@drawable/ic_fast_forward"
+        app:layout_constraintStart_toEndOf="@+id/play"
+        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+    <ImageButton
+        android:id="@+id/zoomIn"
+        style="@style/ButtonBarAction"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/zoomOut"
+        android:src="@drawable/ic_zoom_in"
+        app:layout_constraintEnd_toStartOf="@+id/zoomOut"
+        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+    <ImageButton
+        android:id="@+id/zoomOut"
+        style="@style/ButtonBarAction"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/removeAudio"
+        android:src="@drawable/ic_zoom_out"
+        app:layout_constraintEnd_toStartOf="@+id/removeAudio"
+        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+    <ImageButton
+        android:id="@+id/removeAudio"
+        style="@style/ButtonBarAction"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+    <View
+        android:id="@+id/divider4"
+        style="@style/Separator.Horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/removeAudio" />
+
+    <ProgressBar
+        android:id="@+id/audioLoading"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:indeterminate="false"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        android:max="100"
+        tools:progress="50"
+        app:layout_constraintTop_toBottomOf="@+id/divider2"
+        app:layout_constraintBottom_toBottomOf="@+id/divider3"
+        app:layout_constraintEnd_toEndOf="@+id/audioOverlay"
+        app:layout_constraintStart_toStartOf="@+id/audioOverlay"
+        tools:layout_editor_absoluteY="394dp" />
+
+    <Button
+        android:id="@+id/export"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:text="@string/export_button"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
+</android.support.constraint.ConstraintLayout>
